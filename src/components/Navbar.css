@@ -1,0 +1,65 @@
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 6px ;
+    position: relative;
+    height: 6vh;
+    width: 70vw;
+
+  }
+.navWrapper{
+  display: flex;
+  position: relative;
+  height: 6vh;
+  justify-content: space-between;
+}
+.logo{
+    color: gray;
+    font-size: 18px;
+    height: 5vh;
+    width: 30vw;
+    flex-direction: column;
+    justify-content: center;
+  
+  }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+
+.menus-dropdown{
+    display: flex;
+    justify-content: space-between;
+    margin: 6px;
+    position: relative;
+}
+.menus-dropdown button{
+    background-color: white;
+    border: none;
+    display: flex;
+    
+}
+.menus{
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 18px;
+    position: relative;
+}
+.menus-pics{
+    display: flex;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 9999px;
+    color: red;
+    background-color: grey;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
