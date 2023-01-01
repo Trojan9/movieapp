@@ -4,6 +4,9 @@ import { getAuth, signInWithEmailAndPassword,createUserWithEmailAndPassword } fr
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { collection, getDocs, query, where } from "firebase/firestore";
+import { getFirestore } from "firebase/firestore";
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 // Your web app's Firebase configuration
@@ -20,8 +23,9 @@ const firebaseConfig = {
 };
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 
+const analytics = getAnalytics(app);
+export const db = getFirestore(app);
 export const signIn=(email,password,setNavBool)=>{
 
 toast.loading("Signing in...")
@@ -71,4 +75,47 @@ createUserWithEmailAndPassword(auth, email, password)
     setNavBool(false)
     // ..
   });
+}
+
+export const getMovies=async()=>{
+  const citiesRef = collection(db, "Movies");
+
+// Create a query against the collection.
+const q = query(citiesRef);
+const querySnapshot = await getDocs(q);
+var myMovies=[];
+querySnapshot.forEach((doc) => {
+  // doc.data() is never undefined for query doc snapshots
+  myMovies= [...myMovies, doc.data()];
+
+});
+return myMovies;
+}
+export const getNaijaMovies=async()=>{
+  const citiesRef = collection(db, "NaijaMovies");
+
+// Create a query against the collection.
+const q = query(citiesRef);
+const querySnapshot = await getDocs(q);
+var myMovies=[];
+querySnapshot.forEach((doc) => {
+  // doc.data() is never undefined for query doc snapshots
+  myMovies= [...myMovies, doc.data()];
+
+});
+return myMovies;
+}
+export const getTopRatedMovies=async()=>{
+  const citiesRef = collection(db, "Top Rated");
+
+// Create a query against the collection.
+const q = query(citiesRef);
+const querySnapshot = await getDocs(q);
+var myMovies=[];
+querySnapshot.forEach((doc) => {
+  // doc.data() is never undefined for query doc snapshots
+  myMovies= [...myMovies, doc.data()];
+
+});
+return myMovies;
 }

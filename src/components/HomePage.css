@@ -1,0 +1,180 @@
+.hero-banner-container{
+    padding: 100px 40px;
+    /* background-image: ""; */
+    /* background-color: #dcdcdc; */
+    border-radius: 15px;
+    position: relative;
+    margin-left: 20px;
+    height: 500px;
+    line-height: 0.9; 
+    width: 90vw;
+  
+  }
+  .HomePage{
+    width: 90vw;
+  }
+  .Home{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    border-radius:20px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    margin-top: 20px;
+    /* line-height: 0.9;  */
+    width: 100vw;
+    border-radius:20px;
+}
+.Home-innerdiv{
+    position: relative;
+    height: 500px;
+    /* line-height: 0.9;  */
+    width: 90vw;
+    color: #fff;
+    border-radius:20px;
+}
+
+
+.Home-innerdiv-float{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    right: 0px;
+    border-radius:20px;
+    bottom: 0px;
+    top: 0px;
+    background: rgba(0, 0 ,0 ,0.7);
+   
+}
+
+  .Home-innerdiv-img{
+    height: 500px;
+    /* line-height: 0.9;  */
+    width: 90vw;
+    /* width: 100%; */
+    /* height:100%; */
+    object-fit: cover;
+    border-radius:20px
+      /* mask-image: linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0));  */
+    /* z-index: -1;this makes the image gradient extends to the back of the product list..it can be applied to other projects take note */
+    /* margin-bottom: -150px; this moves the product image up a bit */
+}
+.rating{
+    /* top: -10px; */
+    display: flex;
+    bottom: 0px;
+}
+   .beats-solo{
+    font-size: 20px;
+    padding-left: 30px;
+    margin-left: 10vw;
+  }
+  .hero-banner-container button{
+     border-radius: 15px;
+    padding: 10px 16px;
+    background-color: #f02d34;
+    color: white;
+    border: none;
+    /* margin-top: 20px; */
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    z-index:10000 !important;
+  }
+  
+  .hero-banner-container h3{
+    font-size: 4rem;
+    margin-top: 4px;
+    color: white;
+    margin-bottom: 5px;
+  }
+  .hero-banner-container h1{
+    color: white;
+    font-size: 10em;
+    margin-left: -20px;
+    text-transform: uppercase;
+  }
+  .hero-banner-image{
+    /* position: absolute; */
+    top: 0%;
+    right:20%;
+    width: 90vw;
+    height: 450px;
+  }
+  
+  
+  .desc{
+  position: absolute;
+  right: 10%;
+  bottom: 25%;
+  width: 300px;
+  line-height: 1.3;
+  display: flex;
+  flex-direction: column;
+   color: #324d67;
+  
+  }
+  .desc p{
+    color: white;
+    font-weight: 100;
+  text-align: end;
+  }
+  .desc h5{
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    align-self: flex-end;
+  }
+  .products-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  width: 100vw;
+}
+.product-card{
+ cursor: pointer;
+  transform: scale(1, 1);
+  transition: transform 0.5s ease;
+ color: #324d67;
+
+}
+.product-card:hover{
+  transform: scale(1.1,1.1)
+}
+.product-image{
+  border-radius: 15px;
+ background-color: #ebebeb;
+  transform: scale(1, 1);
+  transition: transform 0.5s ease;
+}
+
+.product-name{
+  font-weight: 500;
+}
+.product-price{
+  font-weight: 800;
+  margin-top: 6px;
+  color: black;
+}
+.products-heading{
+  text-align: center;
+  margin: 40px 0px;
+ color: #324d67;
+
+}
+.products-heading h2{
+  font-size: 40px;
+  font-weight: 800;
+}
+.products-heading p{
+  font-size: 16px;
+  font-weight: 200;
+}
