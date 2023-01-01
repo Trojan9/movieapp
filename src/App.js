@@ -5,6 +5,7 @@ import { GoogleOAuthProvider } from '@react-oauth/google';
 import Login from './components/Login';
 import Home from './container/Home';
 import SignUp from './components/SignUp';
+import PlayMovie from './components/PlayMovie';
 // note evry variable in your .env file must start with REACT_APP_ else it won't work or see it to access
 const App = () => {
   
@@ -14,6 +15,7 @@ const App = () => {
    <Routes>
         <Route path='login' element={<Login/>}></Route>
         <Route path='signup' element={<SignUp/>}></Route>
+        <Route path='play/:type/:id' element={<PlayMovie/>}></Route>
         <Route path='/*' element={<Home/>}></Route>
    </Routes>
    </GoogleOAuthProvider>

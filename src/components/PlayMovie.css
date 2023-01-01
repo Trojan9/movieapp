@@ -1,10 +1,22 @@
 .player-wrapper {
     position: relative;
-    padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+    width: 100vw;
+    height: 100vh;
+    /* padding-top: 56.25%  */
+    /* Player ratio: 100 / (1280 / 720) */
   }
   
   .react-player {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  .nullvalue{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+
   }

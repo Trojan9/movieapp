@@ -7,7 +7,7 @@ import { Rating } from 'react-simple-star-rating'
 import { db, getMovies,getNaijaMovies,getTopRatedMovies } from '../utils/api'
 import './HomePage.css'
 import Movie from './Movie'
-import { Spinner } from 'react-bootstrap';
+import Spinner from './Spinner';
 import { randomIntFromInterval } from '../utils/fetchUser';
 const Browse = () => {
     const [movies, setMovies] = useState(null)
@@ -83,7 +83,7 @@ const Browse = () => {
           {/* <h1>{}</h1> */}
           
           <div>
-            <Link href={`/play`}>
+            <Link to={`/play/movies/${movies[raandomInt].id}`}>
               <button type='button'>Play</button>
             </Link>
             <div className='desc'>
@@ -104,7 +104,7 @@ const Browse = () => {
       <div className="maylike-products-wrapper">
           <div className="marquee">
           <div className="maylike-products-container track">
-         {naijaMovies?.map((movie) => <Movie key={movie?.imageurl} movie={movie} />)}
+         {naijaMovies?.map((movie) => <Movie key={movie?.id} movie={movie} type="naija" />)}
        </div>
        </div>
        </div>
@@ -115,7 +115,7 @@ const Browse = () => {
       <div className="maylike-products-wrapper">
           <div className="marquee">
           <div className="maylike-products-container track">
-         {topRatedMovies?.map((movie) => <Movie key={movie.imageurl} movie={movie} />)}
+         {topRatedMovies?.map((movie) => <Movie key={movie.id} movie={movie} type="topRated"/>)}
        </div>
        </div>
        </div>
@@ -127,7 +127,7 @@ const Browse = () => {
        <div className="maylike-products-wrapper">
           <div className="marquee">
           <div className="maylike-products-container track">
-         {movies?.map((movie) => <Movie key={movie.imageurl} movie={movie} />)}
+         {movies?.map((movie) => <Movie key={movie.id} movie={movie} type="movies"/>)}
        </div>
             {/* <div className="maylike-products-container track">
               {products.map((item) => (

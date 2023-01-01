@@ -1,4 +1,4 @@
-import { Spinner } from '@chakra-ui/react'
+import Spinner from './Spinner';
 import React,{useEffect, useState} from 'react'
 import { toast } from 'react-hot-toast'
 import { Link } from 'react-router-dom'
@@ -66,7 +66,7 @@ const HomePage = () => {
         {/* <h1>{}</h1> */}
         
         <div>
-          <Link href={`/play`}>
+          <Link to={`/play/movies/${movies[0].id}`}>
             <button type='button'>Play</button>
           </Link>
           <div className='desc'>
@@ -85,7 +85,7 @@ const HomePage = () => {
       <p></p>
     </div>   
        <div className="products-container">
-       {movies?.map((movie) => <Movie key={movie.id} movie={movie} />)}
+       {movies?.map((movie) => <Movie key={movie.id} movie={movie} type="movies" />)}
      </div>
       </div>
      

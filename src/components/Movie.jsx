@@ -2,10 +2,10 @@ import React from 'react';
 import './Movie.css';
 import { Link } from 'react-router-dom';
 
-const Movie = ({ movie:{ imageurl, title, duration, rating,id } }) => {
+const Movie = ({ movie:{ imageurl, title, duration, rating,id },type }) => {
   return (
     <div>
-      <Link to={`/play/${id}`}>
+      <Link to={`/play/${type}/${id}`}>
         <div className="product-card">
           <img 
             src={imageurl}

@@ -9,6 +9,7 @@ import MovieDetail from '../components/MovieDetail';
 import Browse from '../components/Browse';
 import TopRated from '../components/TopRated';
 import Naija from '../components/Naija';
+import Search from '../components/Search';
 const Home = () => {
     const navigate=useNavigate();
     const [searchTerm, setSearchTerm] = useState('')
@@ -26,6 +27,7 @@ const Home = () => {
         <Route path='/*' element={<HomePage/>}></Route>
         <Route path='play' element={<PlayMovie/>}></Route>
         <Route path='moviedetails' element={<MovieDetail/>}></Route>
+        <Route path='search' element={<Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>}/>
         <Route path='browse' element={<Browse/>}></Route>
         <Route path='naija' element={<Naija/>}></Route>
         <Route path='topRated' element={<TopRated/>}></Route>

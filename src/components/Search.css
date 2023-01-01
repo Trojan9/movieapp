@@ -1,0 +1,7 @@
+.nullvalue{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.25rem; /* 20px */
+line-height: 1.75rem; /* 28px */
+    /* 'mt-10 text-center text-xl' */
+}

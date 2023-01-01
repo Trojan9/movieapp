@@ -89,6 +89,7 @@ querySnapshot.forEach((doc) => {
   myMovies= [...myMovies, doc.data()];
 
 });
+localStorage.setItem("movies", JSON.stringify(myMovies))
 return myMovies;
 }
 export const getNaijaMovies=async()=>{
@@ -103,6 +104,7 @@ querySnapshot.forEach((doc) => {
   myMovies= [...myMovies, doc.data()];
 
 });
+localStorage.setItem("naija", JSON.stringify(myMovies))
 return myMovies;
 }
 export const getTopRatedMovies=async()=>{
@@ -117,5 +119,6 @@ querySnapshot.forEach((doc) => {
   myMovies= [...myMovies, doc.data()];
 
 });
+localStorage.setItem("topRated", JSON.stringify(myMovies))
 return myMovies;
 }
