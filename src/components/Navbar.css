@@ -219,13 +219,13 @@ body {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1); */
   
 }
-.side-drawer.open {
+/* .side-drawer.open { */
   /* transform: translateX(100%);  */
-  animation-name: slide-in;
+  /* animation-name: slide-in;
   animation-duration: 0.5s;
-  animation-timing-function:cubic-bezier(0, 0, 0.2, 1) ;
+  animation-timing-function:cubic-bezier(0, 0, 0.2, 1) ; */
   /* changed it */
-}
+/* } */
 .Navlogomenu{
   display: flex;
   width: 50vw;
