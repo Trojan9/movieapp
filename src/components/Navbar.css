@@ -211,16 +211,16 @@ body {
   width: 60%;
   z-index: 200;
   box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
-  transform: translateX(0); /*changed it */
+  /* transform: translateX(0); changed it */
   animation-name: slide-in;
   animation-duration: 0.5s;
   animation-timing-function:cubic-bezier(0, 0, 0.2, 1) ;
-  transition-duration: 75ms;
-  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  /* transition-duration: 75ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1); */
   
 }
 .side-drawer.open {
-  transform: translateX(100%); 
+  /* transform: translateX(100%);  */
   animation-name: slide-in;
   animation-duration: 0.5s;
   animation-timing-function:cubic-bezier(0, 0, 0.2, 1) ;
