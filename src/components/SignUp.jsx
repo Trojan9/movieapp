@@ -62,7 +62,7 @@ const SignUp = () => {
                     <img src={logo} alt="logo" width="130px" />
                 </div>
                 <div className="container">
-                    <label for="uname"><b>Username</b></label>
+                    <label for="uname"><b>Email</b></label>
                     <input type="text" placeholder="Enter Username" name="uname" value={email} 
             onChange={(e)=>setEmail(e.target.value)} required/>
 
